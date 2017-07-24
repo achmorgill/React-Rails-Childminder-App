@@ -1,0 +1,71 @@
+
+body {
+  background-color: black; 
+}
+.nav-wrapper {
+  display: flex;
+}
+
+.nav{
+  flex: 1;
+  background-color: yellow;
+  font: normal 26px 'Trebuchet MS', Trebuchet, Arial, Sans-Serif; 
+  margin:0px 0px;
+  color: black;
+}
+.home {
+  background-color: red;
+}
+.profiles {
+  background-color: green;
+}
+.tasks {
+  background-color: blue;
+}
+.contact {
+  background-color: yellow;
+}
+
+.home-image {
+  display: flex;
+  height: 700px;
+  width: 1500px ;
+  position: absolute; 
+  right: 0px; 
+  bottom: 0px;
+
+}
+
+
+/*#nav-nav {
+  display: flex;
+  align-items: center;
+  font: normal 26px 'Trebuchet MS', Trebuchet, Arial, Sans-Serif;  
+}
+
+#nav-nav ul {
+  overflow:hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#nav-nav li {
+  display: flex;  
+  float: left;
+  display: inline;
+}
+
+#nav-nav a:hover {
+  background-color: red;
+}
+#nav-nav a {
+  display: block;
+  margin:0px 0px;
+  padding:0px 10px;
+  line-height: 75px;
+  color: blue;
+  text-decoration:none;
+  background-color: yellow;
+}
+*/
