@@ -13,11 +13,10 @@ class NavComponent extends React.Component {
     return(
 
       <div className="nav-wrapper">
-
         <div className="nav home"><Link to="/">Home</Link></div>
-        <Link to="/profiles"><div className="nav profiles">Profiles</div></Link>
-        <div className="nav tasks">Tasks</div>
-        <div className="nav contact">Contact</div>
+        <div className="nav profiles"><Link to="/profiles">Child Profiles</Link></div>
+        <div className="nav tasks"><Link to="/tasks">Daily Logs</Link></div>
+        <div className="nav contact"><Link to="/contact">Contact</Link></div>
       </div>
       )
   }

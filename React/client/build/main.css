@@ -33,7 +33,10 @@ body {
   position: absolute; 
   right: 0px; 
   bottom: 0px;
+}
 
+h1 {
+  color: white;
 }
 
 
