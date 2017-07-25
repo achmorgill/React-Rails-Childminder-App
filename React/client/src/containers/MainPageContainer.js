@@ -8,7 +8,7 @@ class MainPageContainer extends React.Component {
 
     super();
     this.state = {
-      homePhoto: "/public/images/Nursery-schools2.jpg"
+      homePhoto: "/public/images/Nursery-schools2.jpg",
     }
   }
 
