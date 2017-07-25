@@ -15,6 +15,7 @@ window.addEventListener('load', function () {
   ReactDOM.render(
     <Router history={history}>
       <div>
+        <Route path='/' component={navComponent}/>
         <Route exact path="/" component={MainPageContainer}/>
         <Route path="/tasks" component={Tasks}/>
         <Route path='/profiles' component={Profiles}/>

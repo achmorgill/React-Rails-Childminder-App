@@ -8,14 +8,17 @@ class MainPageContainer extends React.Component {
 
     super();
     this.state = {
-      homePhoto: "/public/images/Nursery-schools2.jpg",
+      homePhoto1: "/public/images/Haddo.jpg",
+      homePhoto2: "/public/images/bucket-spade-beach.jpg"      // homePhoto3: "/public/images/Haddo.jpg"
+
     }
   }
 
   render() {
     return(
       <div className="main-page">
-        <HomeImage homePhoto={this.state.homePhoto}/>
+        <HomeImage homePhoto1={this.state.homePhoto1}/>
+        <HomeImage homePhoto2={this.state.homePhoto2}/>
       </div>
       )
   }

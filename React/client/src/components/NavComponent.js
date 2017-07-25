@@ -7,7 +7,6 @@ class NavComponent extends React.Component {
     console.log("you are in navToggle")
     }
 
-
   render() {
 
     return(

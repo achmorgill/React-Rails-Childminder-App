@@ -17,10 +17,10 @@ class Content extends React.Component {
   render() {
     return(
       <div className="content">
-       <form ref={(input)} => this.email = input} className="email-edit" onSubmit={this.saveEmail.bind(this)} />
-          <input ref={(input)} => this.name = input} type="text" placeholder="Email Name" />
-          <button type="submit">Submit</button>
-       </form>
+        <form>
+          <input type="text" name="fullname" />   
+          <input type="text" email="lastname" />
+        </form>
       </div>
       )
 

@@ -8,45 +8,36 @@ body {
 
 .nav{
   flex: 1;
-  background-color: yellow;
+  background-color: red;
   font: normal 26px 'Trebuchet MS', Trebuchet, Arial, Sans-Serif; 
   margin:0px 0px;
   color: black;
+/*  text-decoration: none;
+*/}
+
+.home-image1 {
+  display: flex;
+  height: 500px;
+  width: 600px ;
+  position: absolute; 
+  right: 0px; 
+  bottom: 50px;
 }
-.home {
-  background-color: red;
+.home-image2 {
+  display: flex;
+  height: 500px;
+  width: 600px ;
+  position: absolute; 
+  left: 0px; 
+  bottom: 50px;
 }
-.profiles {
-  background-color: green;
-}
-.tasks {
-  background-color: blue;
-}
-.contact {
+/*
+#nav-nav a:hover {
   background-color: yellow;
 }
 
-.home-image {
-  display: flex;
-  height: 700px;
-  width: 1500px ;
-  position: absolute; 
-  right: 0px; 
-  bottom: 0px;
-}
-
-h1 {
-  color: white;
-}
-
-
-/*#nav-nav {
-  display: flex;
-  align-items: center;
-  font: normal 26px 'Trebuchet MS', Trebuchet, Arial, Sans-Serif;  
-}
-
-#nav-nav ul {
+*/
+/*#nav-nav ul {
   overflow:hidden;
   display: flex;
   justify-content: flex-end;
@@ -71,4 +62,4 @@ h1 {
   text-decoration:none;
   background-color: yellow;
 }
-*/
+*/*/
