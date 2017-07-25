@@ -9,7 +9,8 @@ class Tasks extends React.Component {
         this.state = {
           profiles: {},
           tasks: [],
-          children: []
+          children: [],
+          option_selected: null
         }
       }
 
@@ -33,13 +34,13 @@ class Tasks extends React.Component {
     request.send(null);
 
     var url2 = 'http://localhost:3000/api/children';
-    var request = new XMLHttpRequest();
-    request.open('GET', url2);
+    var request2 = new XMLHttpRequest();
+    request2.open('GET', url2);
 
-    request.onload = () => {
+    request2.onload = () => {
       if (request.status === 200) {
-        var data = JSON.parse(request.responseText);
-        this.setState({children: data})
+        var profiles = JSON.parse(request2.responseText);
+        this.setState({children: profiles})
         console.log("children", this.state.children)
 
       }else{
@@ -47,7 +48,7 @@ class Tasks extends React.Component {
         this.props.history.goBack();
       }
     }
-    request.send(null);
+    request2.send(null);
 
 
   }
@@ -59,8 +60,7 @@ class Tasks extends React.Component {
   render() {
     return(
       <div>
-        <h3 id="select-child">Select Child</h3>
-        <ChildWrapper tasks={this.state.tasks} handleOnClick={this.handleOnClick}
+        <ChildWrapper children={this.state.children} handleOnClick={this.handleOnClick}
         />
       </div>
       )

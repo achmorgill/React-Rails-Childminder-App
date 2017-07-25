@@ -13,8 +13,7 @@ class NavComponent extends React.Component {
 
       <div className="nav-wrapper">
         <div className="nav home"><Link to="/">Home</Link></div>
-        <div className="nav profiles"><Link to="/profiles">Child Profiles</Link></div>
-        <div className="nav tasks"><Link to="/tasks">Daily Logs</Link></div>
+        <div className="nav tasks"><Link to="/tasks">Select Child</Link></div>
         <div className="nav contact"><Link to="/contact">Contact</Link></div>
       </div>
       )

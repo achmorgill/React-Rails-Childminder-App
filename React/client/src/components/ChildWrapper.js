@@ -1,13 +1,14 @@
 import React from 'react'
 import ChildPics from './ChildPics'
+import { Link } from 'react-router-dom'
 
 class ChildWrapper extends React.Component {
 
   render() {
 
 
-    var photoToRender = this.props.tasks.map((task, index) => {
-      return <ChildPics task={task} index={index} key={index} handleOnClick={this.props.handleOnClick} />
+    var photoToRender = this.props.children.map((child, index) => {
+      return <Link to="/profiles"><ChildPics child={child} index={index} key={index} handleOnClick={this.props.handleOnClick} /></Link>
     })
 
     return(

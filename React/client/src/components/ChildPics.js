@@ -14,7 +14,7 @@ class ChildPics extends React.Component {
   render() {
     return(
       <div className="child-photo">
-        <img className="child-image" src={this.props.task.image} onClick={this.onPhotoClick.bind(this)} />
+        <img className="child-image" src={this.props.child.image} onClick={this.onPhotoClick.bind(this)} />
       </div>
       )
 
