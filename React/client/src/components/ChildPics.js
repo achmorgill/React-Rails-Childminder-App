@@ -2,6 +2,10 @@ import React from 'react'
 
 class ChildPics extends React.Component {
 
+  constructor(props) {
+    super(props)
+  }
+
   onPhotoClick() {
     console.log("index", this.props.index)
     this.props.handleOnClick(this.props.index)
@@ -9,8 +13,8 @@ class ChildPics extends React.Component {
 
   render() {
     return(
-      <div className="task-photo">
-        <img className="task-image" src={this.props.task.image} onClick={this.onPhotoClick.bind(this)} />
+      <div className="child-photo">
+        <img className="child-image" src={this.props.task.image} onClick={this.onPhotoClick.bind(this)} />
       </div>
       )
 

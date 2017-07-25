@@ -2,6 +2,11 @@
 body {
   background-color: black; 
 }
+#select-child {
+  color: white;
+  right: 0px;
+  top: 50px;
+}
 .nav-wrapper {
   display: flex;
 }
@@ -30,6 +35,13 @@ body {
   position: absolute; 
   left: 0px; 
   bottom: 50px;
+}
+
+.child-image {
+  height: 200px;
+  width: 150px;
+  border:2px solid white;
+  float: left;
 }
 /*
 #nav-nav a:hover {
@@ -62,4 +74,4 @@ body {
   text-decoration:none;
   background-color: yellow;
 }
-*/*/
+*/

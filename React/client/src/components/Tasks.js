@@ -8,30 +8,48 @@ class Tasks extends React.Component {
     super();
         this.state = {
           profiles: {},
-          tasks: [
-            {name: "Tony Miller", image: "/public/images/tony.jpeg", desc: "There will be a description here"},
-            {name: "Bethany Miller", image: "/public/images/bethany.jpeg", desc: "There will be a description here"},
-            {name: "Jenny Smith", image: "/public/images/jenny.jpeg", desc: "There will be a description here"}
-           ]
+          tasks: [],
+          children: []
         }
       }
 
   componentDidMount() {
 
-    var url = 'http://localhost:3000/api/tasks';
+    var url1 = 'http://localhost:3000/api/tasks';
     var request = new XMLHttpRequest();
-    request.open('GET', url);
+    request.open('GET', url1);
 
     request.onload = () => {
       if (request.status === 200) {
-        console.log("request", request.responseText);
         var data = JSON.parse(request.responseText);
+        this.setState({tasks: data})
+        console.log("tasks", this.state.tasks)
+
       }else{
         console.log("oh no its not logged in")
         this.props.history.goBack();
       }
     }
     request.send(null);
+
+    var url2 = 'http://localhost:3000/api/children';
+    var request = new XMLHttpRequest();
+    request.open('GET', url2);
+
+    request.onload = () => {
+      if (request.status === 200) {
+        var data = JSON.parse(request.responseText);
+        this.setState({children: data})
+        console.log("children", this.state.children)
+
+      }else{
+        console.log("oh no its not logged in")
+        this.props.history.goBack();
+      }
+    }
+    request.send(null);
+
+
   }
 
   handleOnClick(index) {
@@ -41,8 +59,9 @@ class Tasks extends React.Component {
   render() {
     return(
       <div>
-        <h1>Select Child To See their Profile</h1>
-        <ChildWrapper tasks={this.state.tasks}/>
+        <h3 id="select-child">Select Child</h3>
+        <ChildWrapper tasks={this.state.tasks} handleOnClick={this.handleOnClick}
+        />
       </div>
       )
 
