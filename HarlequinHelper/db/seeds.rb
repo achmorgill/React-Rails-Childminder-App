@@ -40,6 +40,36 @@ jenny = Child.create({
   age: 4
   })
 
+paula = Child.create({
+  name: "Paula Thompson ",
+  address: "Holly House, Auchnagatt",
+  dob: "29-04-13",
+  image: "/public/images/paula.jpeg",
+  emergency_contact: "Duncan Thompson (Father) Tel: 07253378276",
+  medical: "None",
+  age: 4
+  })
+
+matthew = Child.create({
+  name: "Matthew Jenkins",
+  address: "23, Main Avenue, Tarves",
+  dob: "21-09-13",
+  image: "/public/images/matthew.jpeg",
+  emergency_contact: "Mary Duncan (Mother) Tel: 07373398276",
+  medical: "Hay Fever, Asthma",
+  age: 4
+  })
+
+david = Child.create({
+  name: "David Young ",
+  address: "HopeTown Farm, Auchnagatt",
+  dob: "29-04-13",
+  image: "/public/images/david.jpeg",
+  emergency_contact: "Gerald Young (Father) Tel: 07253398276",
+  medical: "None",
+  age: 4
+  })
+
 task1 = Task.create({
   name: "Bethany Brown",
   image: "parkVisit1.jpeg",

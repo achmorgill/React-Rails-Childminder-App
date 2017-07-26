@@ -16,9 +16,9 @@ class MainPageContainer extends React.Component {
         <img className="image five" src="/public/images/waterballfun.jpg" />
         <img className="image six" src="/public/images/mixingpaint.jpg" />
         <img className="image seven" src="/public/images/beach.jpg" />
-        <img className="image eight" src="/public/images/bucketSand.jpg" />
-        <img className="image nine" src="/public/images/cacti.jpg" />
+        <img className="image eight" src="/public/images/cacti.jpg" />>
         <img className="image ten" src="/public/images/diggers.jpg" />
+        <img className="image nine" src="/public/images/bucketSand.jpg" />
         <img className="image eleven" src="/public/images/ducks.jpg" />
         <img className="image twelve" src="/public/images/dinosaur.jpg" />
         <img className="image thirteen" src="/public/images/babyBathTime.jpg" />
