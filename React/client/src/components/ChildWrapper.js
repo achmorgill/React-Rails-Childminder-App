@@ -1,6 +1,7 @@
 import React from 'react'
 import ChildPics from './ChildPics'
 import { Link } from 'react-router-dom'
+import EnterNewProfile from './EnterNewProfile'
 
 class ChildWrapper extends React.Component {
 
@@ -8,12 +9,17 @@ class ChildWrapper extends React.Component {
 
 
     var photoToRender = this.props.children.map((child, index) => {
-      return <Link to="/profiles"><ChildPics child={child} index={index} key={index}  children={this.props.children}/></Link>
+      return <Link to='/tasks'><ChildPics child={child} index={index} key={index}  children={this.props.children} handleOnClick={this.props.handleOnClick}/></Link>
     })
 
     return(
-      <div id="childWrapper">
-        {photoToRender}
+      <div className="childWrapper">
+        <div id="profile-div">
+          {photoToRender}
+        </div>
+        <div id="new-profile-div">
+          <EnterNewProfile children={this.props.children} handleOnClick={this.props.handleOnClick}/>
+        </div>
       </div>
       )
 

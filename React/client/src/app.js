@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MainPageContainer from './containers/MainPageContainer';
 import navComponent from "./components/NavComponent";
-import Profiles from './components/Profiles';
+import ChildProfile from './components/ChildProfile'
 import Contact from './components/Contact'
 import Girfec from './components/Girfec';
 import Price from './components/Price';
@@ -19,11 +19,11 @@ window.addEventListener('load', function () {
       <div>
         <Route path='/' component={navComponent}/>
         <Route exact path="/" component={MainPageContainer}/>
-        <Route path="/tasks" component={Tasks}/>
-        <Route path='/profiles' component={Profiles}/>
-        <Route path='/profiles' component={Girfec}/>
+        <Route path='/profiles' component={ChildProfile}/>
+        <Route path='/girfec' component={Girfec}/>
         <Route path='/prices' component={Price}/>
         <Route path='/Contact' component={Contact}/>
+        <Route path='/Tasks' component={Tasks}/>
        </div>
     </Router>,
     document.getElementById('app')

@@ -5,15 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-Child.delete_all
+Perform.delete_all
 Task.delete_all
+Child.delete_all
+
 
 bethany = Child.create({
   name: "Bethany Brown",
   address: "52, Crown Street, Aberdeen",
   dob: "21-04-13",
-  image: "bethanybrown.jpeg",
+  image: "/public/images/bethany.jpeg",
   emergency_contact: "Susan Brown (Mother) Tel: 07756398276",
   medical: "Nut allergy",
   age: 4
@@ -23,7 +24,7 @@ tony = Child.create({
   name: "Tony Brown",
   address: "52, Crown Street, Methlick",
   dob: "10-02-12",
-  image: "tonybrown.jpeg",
+  image: "/public/images/tony.jpeg",
   emergency_contact: "Susan Brown (Mother) Tel: 07756398276",
   medical: "None",
   age: 5
@@ -33,7 +34,7 @@ jenny = Child.create({
   name: "Jenny Miller ",
   address: "Templehill House, Auchnagatt",
   dob: "21-04-13",
-  image: "bethanybrown.jpeg",
+  image: "/public/images/jenny.jpeg",
   emergency_contact: "Audrey Miller (Mother) Tel: 07253398276",
   medical: "Partial Hearing  in left ear",
   age: 4
