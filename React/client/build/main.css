@@ -39,7 +39,7 @@ a {
   width: 100px;
   border:2px solid white;
   float: left;
-  margin: 50px;
+  margin: 50px 50px;
 }
 .home-div {
   overflow-x: scroll;
@@ -57,9 +57,9 @@ h1, h2 {
 }
 
 .nursery-name {
-  color: #003636;
-  font-size: 30px;
-  font-style: BrushScriptMT;
+  color: #1BA39C;
+  font-size: 40px;
+  font-style:italic;
 }
 
 .image {
@@ -68,13 +68,24 @@ h1, h2 {
   height:250px
 }
 
-input.home-image {
-   webkit-appearance: none;
-   width:80%
-    margin 0px 2% 2%;
+.cost{
+  padding: 100px;
+  margin: 50px;
+  align-items: center;
+  border: 5px solid #1BA39C;
 }
 
-}
+.home-image h2{
+  color: white;
+  font-style: italic;
+  font-size:30px;
+  padding-left: 50px;
+  margin: 10px;
+  border: 3px solid white;
+  }
+
+
+
 
 
 

@@ -9,6 +9,9 @@ class MainPageContainer extends React.Component {
 
     return(
       <div className="home-image">
+        <div className="tagLineWrapper">
+          <h2>A fun, stimulating, inclusive environment where your child can learn, develop and explore through play</h2>
+        </div>
         <img className="image one" src="/public/images/Haddo.jpg" />
         <img className="image two" src="/public/images/bucket-spade-beach.jpg" />
         <img className="image three" src="/public/images/EasterEggFun.jpg" />

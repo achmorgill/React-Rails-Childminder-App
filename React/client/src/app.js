@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
         <Route path="/tasks" component={Tasks}/>
         <Route path='/profiles' component={Profiles}/>
         <Route path='/profiles' component={Girfec}/>
-        <Route path='/profiles' component={Price}/>
+        <Route path='/prices' component={Price}/>
         <Route path='/Contact' component={Contact}/>
        </div>
     </Router>,
