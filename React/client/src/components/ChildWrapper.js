@@ -8,7 +8,7 @@ class ChildWrapper extends React.Component {
 
 
     var photoToRender = this.props.children.map((child, index) => {
-      return <Link to="/profiles"><ChildPics child={child} index={index} key={index} handleOnClick={this.props.handleOnClick} /></Link>
+      return <Link to="/profiles"><ChildPics child={child} index={index} key={index}  children={this.props.children}/></Link>
     })
 
     return(

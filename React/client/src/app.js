@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import MainPageContainer from './containers/MainPageContainer';
 import navComponent from "./components/NavComponent";
 import Profiles from './components/Profiles';
-import Content from './components/Content'
+import Contact from './components/Contact'
+import Girfec from './components/Girfec';
+import Price from './components/Price';
 import Tasks from './components/Tasks';
 import {Router, Route} from 'react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
@@ -19,7 +21,9 @@ window.addEventListener('load', function () {
         <Route exact path="/" component={MainPageContainer}/>
         <Route path="/tasks" component={Tasks}/>
         <Route path='/profiles' component={Profiles}/>
-        <Route path='/content' component={Content}/>
+        <Route path='/profiles' component={Girfec}/>
+        <Route path='/profiles' component={Price}/>
+        <Route path='/Contact' component={Contact}/>
        </div>
     </Router>,
     document.getElementById('app')

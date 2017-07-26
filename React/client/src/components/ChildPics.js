@@ -6,15 +6,12 @@ class ChildPics extends React.Component {
     super(props)
   }
 
-  onPhotoClick() {
-    console.log("index", this.props.index)
-    this.props.handleOnClick(this.props.index)
-  }
+
 
   render() {
     return(
       <div className="child-photo">
-        <img className="child-image" src={this.props.child.image} onClick={this.onPhotoClick.bind(this)} />
+        <img className="child-image" src={this.props.child.image} />
       </div>
       )
 

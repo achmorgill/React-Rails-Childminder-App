@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: black; 
+  background-color: #2D383C;
+  background-size: cover;
 }
+
 #select-child {
   color: white;
   right: 0px;
@@ -9,32 +16,22 @@ body {
 }
 .nav-wrapper {
   display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #406098;
+  padding: 20px;
 }
 
 .nav{
-  flex: 1;
-  background-color: red;
+  background-color: #1BA39C;
   font: normal 26px 'Trebuchet MS', Trebuchet, Arial, Sans-Serif; 
   margin:0px 0px;
   color: black;
-/*  text-decoration: none;
-*/}
-
-.home-image1 {
-  display: flex;
-  height: 500px;
-  width: 600px ;
-  position: absolute; 
-  right: 0px; 
-  bottom: 50px;
+  border: 4px solid #003636;
 }
-.home-image2 {
-  display: flex;
-  height: 500px;
-  width: 600px ;
-  position: absolute; 
-  left: 0px; 
-  bottom: 50px;
+a {
+  text-decoration: none;
 }
 
 .child-image {
@@ -43,8 +40,44 @@ body {
   border:2px solid white;
   float: left;
   margin: 50px;
+}
+.home-div {
+  overflow-x: scroll;
+}
+.contact-wrapper {
+  padding: 100px;
+  margin: 50px;
+  align-items: center;
+  border: 5px solid #1BA39C;
 
 }
+
+h1, h2 {
+  color: #1BA39C;
+}
+
+.nursery-name {
+  color: #003636;
+  font-size: 30px;
+  font-style: BrushScriptMT;
+}
+
+.image {
+  margin: 70px;
+  width: 20%;
+  height:250px
+}
+
+input.home-image {
+   webkit-appearance: none;
+   width:80%
+    margin 0px 2% 2%;
+}
+
+}
+
+
+
 /*
 #nav-nav a:hover {
   background-color: yellow;

@@ -1,26 +1,29 @@
 import React from 'react';
 import NavComponent from '../components/NavComponent';
-import HomeImage from '../components/HomeImage';
+
 
 class MainPageContainer extends React.Component {
 
-  constructor() {
-
-    super();
-    this.state = {
-      homePhoto1: "/public/images/Haddo.jpg",
-      homePhoto2: "/public/images/bucket-spade-beach.jpg"      // homePhoto3: "/public/images/Haddo.jpg"
-
-    }
-  }
 
   render() {
+
     return(
-      <div className="main-page">
-        <HomeImage homePhoto1={this.state.homePhoto1}/>
-        <HomeImage homePhoto2={this.state.homePhoto2}/>
+      <div className="home-image">
+        <img className="image one" src="/public/images/Haddo.jpg" />
+        <img className="image two" src="/public/images/bucket-spade-beach.jpg" />
+        <img className="image three" src="/public/images/EasterEggFun.jpg" />
+        <img className="image four" src="/public/images/diggers-play.jpg" />
+        <img className="image five" src="/public/images/waterballfun.jpg" />
+        <img className="image six" src="/public/images/mixingpaint.jpg" />
+        <img className="image one" src="/public/images/Haddo.jpg" />
+        <img className="image two" src="/public/images/bucket-spade-beach.jpg" />
+        <img className="image three" src="/public/images/EasterEggFun.jpg" />
+        <img className="image four" src="/public/images/diggers-play.jpg" />
+        <img className="image five" src="/public/images/waterballfun.jpg" />
+        <img className="image six" src="/public/images/mixingpaint.jpg" />
       </div>
       )
   }
 }
 export default MainPageContainer
+

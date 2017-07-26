@@ -53,10 +53,6 @@ class Tasks extends React.Component {
 
   }
 
-  handleOnClick(index) {
-    console.log("handlOnclick")
-  }
-
   render() {
     return(
       <div>
