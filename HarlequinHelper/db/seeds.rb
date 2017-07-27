@@ -72,20 +72,20 @@ david = Child.create({
 
 task1 = Task.create({
   name: "Bethany Brown",
-  image: "parkVisit1.jpeg",
-  desc: "We went to the park today.  The weather was hot and sunny.  Bethany had suncream on, wore her sunglasses and hat.  During our time out she drank lots of water.  We played rounders on the grass and all the children had a great day.  Bethany took part and had great fun, she followed instructions, helped her friends and had lots of exercise"
+  image: "/public/images/bucketsand.jpg",
+  desc: "We went to the beach today.  The weather was hot and sunny.  Bethany had suncream on, wore her sunglasses and hat.  During our time out she drank lots of water.  We made sandcastles using our buckets and spades.  Bethany shared and helped her friends and had great fun.  She was kind and polite all day"
   })
 
 task2 = Task.create({
   name: "Tony Brown",
-  image: "parkVisit1.jpeg",
+  image: "/public/images/whatsthat.jpg",
   desc: "We went to the park today.  The weather was hot and sunny.  Tony  had suncream on, wore his sunglasses and hat.  During our time out he drank lots of water.  We played rounders on the grass and all the children had a great day.  Tony took part and had great fun, he followed instructions, helped his friends and had lots of exercise. He took care of his friend Timmy who was getting frustrated when he had problems hitting the ball"
   })
 
 task3 = Task.create({
   name: "Jenny Miller",
-  image: "parkVisit1.jpeg",
-  desc: "We went to the park today.  The weather was hot and sunny.  Bethany had suncream on, wore her sunglasses and hat.  During our time out she drank lots of water.  We played rounders on the grass and all the children had a great day.  Bethany took part and had great fun, she followed instructions, helped her friends and had lots of exercise.  She wasn't keen on playing at the beginning but after we had explained the rules to her and she understood them, she was a very enthusiastic player"
+  image: "/public/images/crafts.jpg",
+  desc: "Today we had a crafts morning.  Jenny made a lovely picture.  She cut with scissor, used glue and used her imagination to design her creation.  She also helped her younger friend Polly with her craft project.  She was reluctant at first to participate but as soon as she saw how much fun the other children were having, she decided to join in.  It helped that the other children kept asking her to help them. "
   })
 
 Perform.create({child: bethany, task: task1, date: "24-July-2017"})
